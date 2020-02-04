@@ -79,7 +79,9 @@ public class Connexion  {
         return conn;
     }
     public static void closeConnection() throws Exception{
-        conn.close();
+        if (!conn.isClosed()) {
+            conn.close();
+        }    
     }
  
 }

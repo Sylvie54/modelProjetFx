@@ -93,7 +93,6 @@ public class BaseSQLServer {
      * @throws java.lang.Exception
      */
     public static void update(Person person, int ancId) throws Exception {
-        System.out.println(person.getFirstName() + " ancid " + ancId);
         String query = "UPDATE client "
                 + "SET nom = ? "
                 + ", prenom = ? "
